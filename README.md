@@ -4,7 +4,8 @@
 
 Press the below button to deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/REX-BOTZ/FileStream)
+
 <a href="https://youtu.be/2MFOUs2vKz8"><br>
   <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
 </a><br>
