@@ -7,19 +7,19 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 @StreamBot.on_message(filters.command(['start']))
 async def start(_, m: Message):
     await m.reply(f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream link.',
-         disable_web_page_preview=True,
+        quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help_data"),
-                    InlineKeyboardButton("sᴛᴀʀᴛ", callback_data="start_data"),
+                    InlineKeyboardButton('📌  Support Group', url='https://t.me/InFoTelGroup'),
+                    InlineKeyboardButton('🔖  Projects Channel', url='https://t.me/TGBotsZ')
                 ],
                 [
-                    InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Benwolf24")
+                    InlineKeyboardButton('💡  Source Code', url='https://github.com/TGExplore/Screenshot-Bot'),
+                    InlineKeyboardButton('👨  Master', url='https://t.me/odbots')
                 ]
             ]
-        ),
-        reply_to_message_id=message.message_id       
+        )
                   )
 
 @StreamBot.on_message(filters.command(['help']))
