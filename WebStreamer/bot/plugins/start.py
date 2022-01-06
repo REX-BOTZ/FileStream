@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 
 @StreamBot.on_message(filters.command(['start']))
 async def start(_, m: Message):
-    await m.reply(f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream link.',
+    await m.reply(f'Hi {m.from_user.mention(style="md")}, \nI can Convert a Telegram File to Stream Link Also Known as Direct Download Link. \nSend /help to Know More About Me. \n© @Rex_Botz',
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -24,5 +24,18 @@ async def start(_, m: Message):
 
 @StreamBot.on_message(filters.command(['help']))
 async def start(_, m: Message):
-    await m.reply(f'Hi {m.from_user.mention(style="md")}, Send me a file to get an instant stream link. \nI am Fastest Download Link Generator Bot. \nJoin :- @Rex_Botz',
-                  )
+    await m.reply(f'Hi {m.from_user.mention(style="md")}, \n✪ Send me a file to get an instant stream link. \n✪ I am Fastest Download Link Generator Bot. \n✪ I can Convert Telegram File to Link. \n\nJoin :- @Rex_Botz',
+                 quote=True,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('ᴘᴏᴡᴇʀᴇᴅ ʙʏ', url='https://t.me/FluxPlay'),
+                    InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/Rex_Bots_Support')
+                ],
+                [
+                    InlineKeyboardButton('ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Benwolf24'),
+                    InlineKeyboardButton('ᴏᴛʜᴇʀ ʙᴏᴛs', url='https://t.me/Rex_Botz/94/')
+                ]
+            ]
+        )
+                 )
