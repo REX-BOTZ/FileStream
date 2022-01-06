@@ -42,7 +42,7 @@ async def start(_, m: Message):
 
 @StreamBot.on_message(filters.command(['about']))
 async def start(_, m: Message):
-    await m.reply(f'Hi {m.from_user.mention(style="md")}, \n✪ Bot Name : StreamLinkRex \n✪ Developer : @Benwolf24 \n✪ Support Channel : @Rex_Botz \n✪ Group : @Rex_Bots_Support \n✪ Powered By : @FluxPlay \n\n© @Rex_Botz \nHelp @Rex_Bots_Support',
+    await m.reply(f'Hi {m.from_user.mention(style="md")}, \n✪ Bot Name : StreamLinkRex \n✪ Developer : @Benwolf24 \n✪ Channel : @Rex_Botz \n✪ Group : @Rex_Bots_Support \n✪ Powered By : @FluxPlay \n\n© @Rex_Botz \nHelp @Rex_Bots_Support',
                  quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
